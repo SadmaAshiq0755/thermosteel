@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/userStyles.css">
+</head>
+<body>
+    <div class="container" id="contain">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <div class="dropdown-content">
+                    <a class="all" onclick="handleLink(this)">All</a>
+                </div>
+            </div>
+            <div class="search">
+                <label for="search" >Search Your Choice</label>
+                <input type="text" oninput="handleInput(this)" class="search" placeholder="Cakes">
+            </div>    
+            <div class="cart">
+                <button class="cart-btn" onclick="handleCart()">Cart</button>
+                <span class="cart-num"></span>
+            </div>
+        </div>
+        <div class="grid">
+        </div>
+    </div>
+    <script src="./script/userScript.js"></script>
+</body>
+</html>
+

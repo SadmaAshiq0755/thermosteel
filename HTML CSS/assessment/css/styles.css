@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Space Grotesk";
+    /* border: 1px solid white; */
+}
+
+
+.hover{
+    display: inline;
+    width: auto;
+}
+
+.code-view{
+    padding-top: 30px;
+}
+
+.project-view, .code-view{
+    font-size: 1.6em;
+}
+
+.project-image{
+    position: relative;
+}
+
+
+.view-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.project-image:hover .view-hover{
+    background-color: rgba(0, 0, 0,0.7);
+    display: flex;
+}
+
+.icon{
+    width: 20px;
+}
+
+.view{
+    display: none;
+}
+
+.container{
+    background: url(../assets/pattern-rings.svg), url(../assets/pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -250px 60px, 106% 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.blue-underline{
+    border-bottom: 2px solid #4ce19e;
+}
+
+span{
+    border-bottom: 5px solid #4ce19e;
+}
+
+body{
+    background-color: black;
+    padding: 1px;
+}
+
+.hr{
+    width: 82%;
+}
+
+.header{
+    margin: 30px 100px 0px 100px;
+    padding-bottom: 100px;
+    /* border-bottom: 1px solid #fff; */
+}
+
+.navbar, .media-handles, .header-content, .project-header,.footer-end, .media-handles-footer, .footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text{
+    flex: 1;
+}
+
+.portfolio-image{
+    flex: 0.75;
+}
+
+.skills{
+    background: url(../assets/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: 130% 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    /* align-items: center;
+    justify-items: center; */
+    align-self: center;
+    justify-self: center;
+    padding: 60px 20px 0px 20px;
+    width: 81%;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-right-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.media-handles{
+    width: 20%;
+    z-index: 2;
+}
+
+.header-heading{
+    font-size: 5em;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.profile-pic{
+    width: 30%;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    z-index: -2;
+}
+
+.portfolio-image{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-items: center;
+}
+
+.project-thumbnail{
+    width: 100%;
+}
+
+
+.navbar{
+    padding-bottom: 80px;
+}
+
+.header-description{
+    padding-bottom: 60px;
+    font-size: 1.2em;
+}
+
+.contact-me{
+    font-size: 1.2em;
+    display: inline;
+}
+
+.tech-name{
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.experience{
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+
+.projects{
+    margin: 60px 120px 0px 120px;
+    padding-bottom: 150px;
+}
+
+.projects-heading{
+    font-size: 4.2em;
+    font-weight: 700;
+}
+
+.project-header{
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.tech-used{
+    display: flex;
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+.project-name{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+.tech-used-1, .tech-used-2{
+    padding-right: 10px;
+}
+
+.footer-color{
+    background: url(../assets/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: -260px 350px;
+    background-color: #242424;
+}
+
+.footer{
+    padding: 80px 180px 0px 180px;
+}
+
+.footer-heading{
+    font-size: 5em;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+
+.footer-right-content, .footer-left-content{
+    flex: 1;
+}
+
+.input-text{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    width: 80%;
+    align-self: flex-end;
+    font-size: 0.9em;
+}
+
+.footer-text{
+    width: 75%;
+    line-height: 1.6em;
+}
+
+.send-message{
+    padding-top: 30px;
+    align-self: flex-end;
+    font-size: 1.2em;
+    margin-bottom: 100px;
+}
+
+.message{
+    padding-bottom: 80px;
+}
+
+.footer-end{
+    border-top: 1px solid #fff;
+    padding-top: 50px;
+}
+
+.profile-pic-tab, .profile-pic-mobile{
+    display: none;
+    z-index: -2;
+}
+
+
+@media (max-width:1150px){
+    .header-text{
+        flex: 0.75;
+    }
+    
+    .portfolio-image{
+        flex: 0.25;
+    }
+
+    .br{
+        display: none;
+    }
+
+    .profile-pic{
+        width: 345px;
+    }
+
+    .header, .skils, .projects, .footer{
+        margin: 30px;
+    }
+
+    .header-text{
+        width: 75%;
+    }
+
+    .profile-pic{
+        right: 10px;
+    }
+    
+}
+
+@media (max-width:1000px){
+    .tech-name{
+        font-size: 2em;
+    }
+
+    .skills{
+        background: url(../assets/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position: 270% 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        /* align-items: center;
+        justify-items: center; */
+        align-self: center;
+        justify-self: center;
+        padding: 60px 20px 0px 20px;
+        width: 89%;
+    }
+
+    .hr{
+        width: 89%;
+    }
+}
+
+
+@media (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+
+    .container{
+        margin-bottom: 0px;
+    }
+    
+    .header{
+        margin: 30px;
+    }
+
+    .skills{
+        /* background: url(../assets/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position: 1100px 190px;
+        display: grid; */
+        /* background-position: -2000% 100%; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        /* align-items: center; */
+        /* justify-items: center; */
+        /* align-self: center; */
+        /* justify-self: center; */
+        padding: 20px;
+        /* width: 81%; */
+    }
+
+    .tech-name{
+        font-size: 3.5em;
+        padding-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .experience{
+        font-size: 1.5em;
+    }
+
+    .profile-pic, .profile-pic-mobile{
+        display: none;
+    }
+    .profile-pic-tab{
+        display: inline;
+        width: 45%;
+        position: absolute;
+        top: -50px;
+        right: 0px;
+    }
+
+    .portfolio-image{
+        flex: 0.25;
+    }
+
+    .projects{
+        margin: 30px;
+    }
+
+    .project-header{
+        padding-bottom: 30px;
+    }
+
+    .footer{
+        padding: 30px 30px 0px 30px;
+    }
+    
+    .view{
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    .view-code{
+        margin-left:10px ;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer-left-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .footer-right-content{
+        width: 75%;
+    }
+
+    .input-text{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-top: 40px;
+        width: 95%;
+        align-self: flex-end;
+        font-size: 0.9em;
+    }
+
+    .message{
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width:700px){
+    .tech-name{
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width:500px){
+    html{
+        font-size: 8px;
+    }
+
+    .container{
+        background-position: -250px 60px, 125% 8%;
+    }
+
+    .header, .footer, .skills{
+        margin: 10px;
+    } 
+
+    .projects{
+        margin: 20px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .profile-pic-tab, .profile-pic{
+        display: none;
+    }
+    .profile-pic-mobile{
+        display: inline;
+    }
+
+    .header-content{
+        width: 100%;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .header-heading{
+        width: 100%;
+    }
+
+    .skills{
+        grid-template-columns: none;
+        grid-template-rows: repeat(6,1fr);
+        /* justify-items: center; */
+        text-align: center;
+        gap: 0px;
+        background-position: -100% 100%;
+        width: 85%;
+    }
+    .hr{
+        width: 85%;
+    }
+
+
+    .projects-grid{
+        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: none;
+    }
+
+    .portfolio-image{
+        align-self: center;
+        align-items: center;
+        margin-bottom: 120%;
+    }
+
+    .profile-pic-mobile{
+        width: 60%;
+        position: absolute;
+        top: -30px;
+    }
+
+    .media-handles{
+        width: 50%;
+        z-index: 2;
+    }
+
+    .logo{
+        font-size: 3em;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    .header-description{
+        padding-bottom: 30px;
+        font-size: 2em;
+    }
+
+    .header{
+        padding-bottom: 70px;
+    }
+
+    .tech-name{
+        font-size: 4em;
+        padding-bottom: 5px;
+        font-weight: 700;
+    }
+
+    .experience{
+        font-size: 1.9em;
+        padding-bottom: 30px;
+    }
+
+    .skills{
+        margin: 40px 20px 30px 20px;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .project-contact-me{
+        font-size: 1.8em;
+        letter-spacing: 0.2em;
+        padding-bottom: 5px;
+        font-weight: 700;
+    }
+
+    .project-name{
+        font-size: 2.2em;
+    }
+
+    .tech-used, .view{
+        font-size: 1.8em;
+    }
+
+    .projects{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+    }
+
+    .footer{
+        padding: 5px;
+    }
+
+    .footer-right-content{
+        width: 100%;
+    }
+
+    .footer-text{
+        width: 100%;
+        font-size: 2em;
+        opacity: 0.8;
+    }
+
+    .input-text, .send-message{
+        font-size: 2em;
+    }
+
+    .send-message{
+        padding-bottom: 5px;
+    }
+
+}

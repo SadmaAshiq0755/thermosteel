@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+html{
+    font-size: 32px;
+}
+
+.mobile{
+    display: none;
+}
+
+/* :root{
+
+} */
+
+/* .container{
+    margin: 0px 40px;
+} */
+
+.sub{
+    opacity: 0.5;
+}
+
+.right{
+    justify-self:end ;
+}
+
+.first-box{
+    background: url(./Design2/images/bg-pattern-intro-desktop.svg), #ff515b;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position:-100px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 0px 0px 0px 100px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.4em;
+    padding-top: 30px;
+    padding-bottom:100px;
+    width: 80%;
+    align-self: center;
+}
+
+.logo{
+    /* justify-self: end; */
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding-bottom:120px;
+}
+
+
+.left{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.tops{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 280px;
+}
+
+.arrow{
+    padding-left: 5px;
+}
+
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    /* justify-self: center; */
+    align-self: center;
+}
+
+.heading{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.sub-heading{
+    font-size: 0.5em;
+    padding-bottom: 20px;
+}
+
+.second-box{
+    background: url(./Design2/images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:145% 70%;
+    background-size: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 0px 10%;
+    /* width: 60%; */
+}
+
+.header{
+    grid-column: span 2;
+    justify-self: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.headings{
+    font-size: 0.65em;
+}
+
+.text{
+    font-size: 0.4em;
+    line-height: 1.9em;
+}
+
+.phead{
+    padding-bottom: 25px;
+}
+
+.parah-1{
+    padding-bottom: 50px;
+}
+
+.pcontent{
+    width: 85%;
+}
+
+.second-box-footer{
+    background: url(./Design2/images/bg-pattern-circles.svg), #9e9fbd;
+    background-size: 65% ;
+    background-repeat: no-repeat;
+    background-position: -40% 80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    border-radius: 0px 100px;
+    color: #fff;
+    margin-bottom: 200px;
+}
+
+.state-of-art{
+    padding-left: 50px;
+}
+
+.state-heading{
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.third-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    margin-bottom: 300px;
+}
+
+.laptop-image{
+    grid-row: span 2;
+}
+
+.free-open-heading, .powerful-heading{
+    padding-bottom: 20px;
+}
+
+.powerful , .free-open{
+    width: 70%;
+}
+
+
+.laptop{
+    width: 120%;
+    position: relative;
+    right: 40%;
+}
+
+.final-footer{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    justify-content: space-around;
+    background-color: #24242c;
+    color: #fff;
+    border-radius: 0px 100px 0px 0px;
+    padding: 40px 0px 40px 80px;
+}
+
+
+
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    padding-bottom: 20px;
+}
+
+.button{
+    width: 100px;
+    border-radius: 25px;
+    padding: 10px 6px;
+    font-weight: 700;
+}
+
+.trans-back{
+    background: transparent;
+    color: #fff;
+}
+
+.login{
+    border: none;
+}
+
+.learn-more{
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+.white-back{
+    background-color: #fff;
+    border: none;
+    color: #ff515b;
+}
+
+.phone-photos{
+    display: flex;
+    justify-content: end;
+    grid-row: span 2;
+}
+
+.phone{
+    width: 80%;
+}
+
+
+.state-content{
+    width: 86%;
+}
+
+
+@media (max-width:1100px){
+    .second-box{
+        grid-template-columns: 2fr 1fr;
+        padding: 0px 5%;
+    }
+
+    .second-box-footer{
+        height: 220px;
+    }
+
+    .powerful , .free-open{
+        width: 100%;
+    }
+
+    .state-content{
+        width: 95%;
+    }
+
+    .final-footer{
+        padding: 40px 0px 40px 40px;
+    }
+
+}
+
+@media (max-width:700px){
+
+    .mobile{
+        display: inline;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    *{
+        text-align: center;
+    }
+
+    .final-footer{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        justify-content: center;
+        padding: 0px;
+        text-align: center;
+        font-size: 2em;
+    }
+    .logo-1{
+        display: flex;
+        width: 100%;
+    }
+    
+    .company, .connect{
+        padding-top: 40px;
+    }
+
+    .navbar{
+        width: 85%;
+    }
+
+    .hamburger{
+        display: inline;
+    }
+
+    .tops, .login, .sign-up{
+        display: none;
+    }
+
+    .heading{
+        width: 90%;
+        align-self: center;
+    }
+    
+    .second-box{
+        background-image: url(./Design2/images/illustration-editor-mobile.svg);
+        background-repeat: no-repeat;
+        background-position:50% 30%;
+        background-size: 90%;
+        grid-template-columns: none;
+        grid-template-rows: 3fr 2fr;
+        padding-bottom: 40px;
+    }
+
+    .header{
+        grid-column: span 1;
+        justify-self: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        font-size: 1.1em;
+    }
+
+    .parah-1, .parah-2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pcontent{
+        width: 90%;
+        align-self: center;
+    }
+
+    .heading{
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+
+    .sub-heading{
+        font-size: 0.4em;
+        padding-bottom: 20px;
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+ 
+
+    .phone-photos{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        position: relative;
+        bottom: 150px;
+        grid-row: span 1;
+        height: 300px;
+    }
+
+    .phone{
+        width: 80%;
+    }
+
+    .second-box-footer{
+        background: url(./Design2/images/bg-pattern-circles.svg), #9e9fbd;
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position:-6em -15em ;
+        display:grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+        height: auto;
+        border-radius: 0px 100px;
+        color: #fff;
+        margin-bottom: 0px;
+        margin-top: 150px;
+    }
+
+    .state-of-art{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+
+    .state-content{
+        width: 85%;
+    }
+    /* .state-heading{
+
+    } */
+
+    .third-box{
+        display:grid;
+        grid-template-columns: none;
+        grid-template-rows: 3fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .laptop-image{
+        grid-row: span 1;
+    }
+
+
+    
+    .free-open,.powerful{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .laptop-mobile{
+        width: 90%;
+    }
+
+
+}
+
+
+@media (max-width:575px){
+    .phone{
+        width: 90%;
+    }
+    .final-footer{
+        font-size: 1em;
+        padding-top: 60px;
+    }
+
+    .third-box{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width:450px){
+    .second-box{
+        grid-template-rows: 9fr 8fr;
+        background-size: 110%;
+    }
+
+    .second-box-footer{
+        grid-template-rows: 1fr 2fr;
+    }
+    
+    .phone-photos{
+        height: 150px;
+    }
+
+}

@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color:thistle;
+    width: 100vw;
+    height:100vh;
+    display:grid;
+    grid-template:repeat(3,1fr)/repeat(4,1fr);
+}
+
+.box{
+    background-color: blueviolet;
+    border:2px solid black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.box1{
+    grid-row: span 4;
+}
+
+.box2{
+    grid-column:span 2;
+}
+
+
+.box6{
+    grid-row:span 2;
+    grid-column:span 1;
+} 

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+body{
+    background-color: rgba(237, 242, 248, 1);
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width:430px;
+    /* height: 300px; */
+    margin: 150px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+#one{
+    height: 40%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 25px;
+}
+
+#oneFirstHeading{
+    color:#2ccfc1;
+    font-family: "Poppins";
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#oneSecHeading{
+    color: #afc72a;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.oneContent{
+    color:#717277;
+    font-family: "Poppins";
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.two{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 60%;
+}
+
+.child{
+    width: 50%;
+    height: 100%;
+}
+
+#left{
+    background-color: rgba(43, 179, 177, 1);
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+#right{
+    background-color: rgba(74, 190, 189, 1);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    height:auto;
+}
+
+.twoHeading{
+    color: rgba(255, 255, 255, 1);
+    font-weight: bolder;
+    font-family: "Poppins";
+}
+
+#twoHead{
+    padding-bottom:5px;
+    font-size: 13px;
+}
+
+#rightPara{
+    font-size: 8px;
+    /* width: 150px; */
+    font-weight: lighter;
+}
+
+#money{
+    font-weight: bolder;
+    padding:10px 0px 15px;
+    font-size: 20px;
+}
+
+#money2{
+    font-size: 8px;
+    font-weight:lighter;
+}
+
+#signUp{
+    background-color: #bfe031;
+    width:150px;
+    height:30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#leftLastLine{
+    padding-bottom: 15px;
+    font-size: 8px;
+}
+
+#whyUs{
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:700px) {
+    .container{
+        margin: 80px auto;
+        width: 230px;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 60%;
+    }
+
+    #left{
+        width: 100%;
+        padding:25px;
+    }
+
+    #right{
+        padding-left: 25px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .one{
+        width: 20px;
+    }
+}
+
